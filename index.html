@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Wordsearch</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"
+      charset="utf-8">
+    </script>
+    <script src="js/words.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="title">
+        <h1>Wordsearch</h1>
+      </div>
+      <div class="box">
+        <div class="title">
+          <h1>Options</h1>
+        </div>
+        <div class="content">
+          <label for="regex">Regex:</label>
+          <input type="text"  v-model="regex" name="regex" id="regex" placeholder="Enter a regex here...">
+          <br />
+
+          <label for="sorting">Sorting:</label>
+          <select v-model="sorting" id="sorting">
+            <option>Alphabetical</option>
+            <option>Length</option>
+          </select>
+          <br />
+
+          <label for="order">Order:</label>
+          <select v-model="order" id="order">
+            <option>Normal</option>
+            <option>Reversed</option>
+          </select>
+        </div>
+      </div>
+      <div class="box">
+        <div class="title">
+          <h1>Output</h1>
+        </div>
+
+        <div class="content">
+          <ul v-if="words.length > 0" id="output">
+            <li v-for="word in words">
+              {{ word }}
+            </li>
+          </ul>
+          <span class="no-matches" v-else>No matches found</span>
+        </div>
+      </div>
+      <div class="footer">
+        Copyright &copy; 2016 Zac Garby. All Rights Reserved.
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js" charset="utf-8"></script>
+</html>
