@@ -1,6 +1,6 @@
 # Wordsearch
 Search for every word in the English language which matches a certain regex.
 
-[http://zac-garby.github.io/Wordsearch](http://zac-garby.github.io/Wordsearch)
+[https://zacgarby.co.uk/Wordsearch](https://zacgarby.co.uk/Wordsearch)
 
 Made with [Vue](http://vuejs.org).
