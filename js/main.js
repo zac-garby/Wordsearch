@@ -39,6 +39,7 @@ function updateOutput() {
     }
   }
   app.words = output
+  sort(app.sorting, app.order)
 }
 
 function sort(type, direction) {
