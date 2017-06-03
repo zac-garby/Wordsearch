@@ -9,4 +9,7 @@ Wordsearch allows you to query *over 350,000* words using a regex. For example,
 you could search for `(word|search).*`, which would give you 78 words: search,
 searchable, searchableness, and many more.
 
-Have a look at it [here](https://zac-garby.github.io/Wordsearch/)
+## Usage
+
+It's pretty simple to use. Just clone the repository and open _index.html_, then type
+a regex in the regex box.
